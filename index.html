@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Pop Cat</title>
+  <title>Pop NUEA</title>
   <style>
     * {
       box-sizing: border-box;
@@ -22,15 +22,24 @@
       font-family: Arial, sans-serif;
       touch-action: manipulation;
     }
+    /* สไตล์ของชื่อเกม Pop NUEA */
+    #title {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #2b2d42;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+    }
     #score {
       font-size: 3.5rem;
       font-weight: bold;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     #cat-container {
-      width: 300px;
-      height: 300px;
+      width: 320px;
+      height: 320px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -45,10 +54,14 @@
 </head>
 <body>
 
+  <!-- ส่วนหัวข้อชื่อเกม -->
+  <h1 id="title">Pop NUEA</h1>
+
+  <!-- ส่วนแสดงคะแนน -->
   <div id="score">0</div>
   
   <div id="cat-container">
-    <img id="cat-img" src="close.png" alt="Cat Closed">
+    <img id="cat-img" src="close.png" alt="Pop NUEA Closed">
   </div>
 
   <audio id="pop-sound" src="pop.mp3" preload="auto"></audio>
